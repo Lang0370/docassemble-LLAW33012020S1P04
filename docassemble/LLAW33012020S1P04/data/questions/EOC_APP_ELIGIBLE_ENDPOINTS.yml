@@ -20,10 +20,33 @@ subquestion: |
   Did the discrimination occur in an area of public? | ${ area_public_life } 
   Do you wish to make this complaint at a State or Federal Level?   | ${ state_or_federal }
 
+continue button field: MJFgoto_survey
+---
+question: Survey
+fields:
+  - Was this useful?: MJFsurvey_response
+    datatype: yesnoradio
+---
 event: endpoint['eligible']
+question: Final Screen
+subquestion: |
+  Thanks for your response ${ hidden_response }
 buttons:
   - Exit: exit
   - Restart: restart
+---
+# Hides the survey response
+code: |
+  if MJFsurvey_response or MJFgoto_survey or survey_answer:
+    hidden_response = ''
+  else:
+   hidden_response = ''
+---
+code: | 
+  # Sends the email
+  # send_email(to='eoc@sa.gov.au', template=blabla)
+  # Last line in code block
+  survey_answer = True
 ---
 question: |
   Thank you for completing the Equal Opportunity Commission's Complaint Directory.

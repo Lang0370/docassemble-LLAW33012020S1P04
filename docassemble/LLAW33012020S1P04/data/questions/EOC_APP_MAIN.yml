@@ -15,7 +15,7 @@ features:
 ---
 mandatory: True
 continue button field: target_variable
-question: 
+question: |
 
   <span class="EOCtitle">
     Welcome to the **Equal Opportunity Commission's Complaint Directory**
