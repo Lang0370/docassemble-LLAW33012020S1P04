@@ -14,17 +14,16 @@ features:
   hide standard menu: False
 ---
 mandatory: True
-continue button field: target_variable
-question: 
+question: |
 
   <span class="EOCtitle">
     Welcome to the **Equal Opportunity Commission's Complaint Directory**
   </span>
 
 subquestion: |
-  Thank you for using the **Equal Opportunity Commission's Complaint Directory**. This application will help direct blah blah blah blah
+  Thank you for using the **Equal Opportunity Commission's Complaint Directory**. This application will help determine whether or not the Equal Opportunity Commission has the authority under the Equal Opportunity Act to assist with your complaint. Where they are not able to assist because the Act does not authorise them to, this application will help determine other complaints bodies which may be able to.  
   
-  If you are a business applying for an exemption under the Equal Opportunity Act please click the exemptions button below to find the EOC contact details.
+  If you are a business applying for an exemption to discriminate favourably on one particular group under the Equal Opportunity Act please click the exemptions button below to find the EOC contact details.
   
   **Disclaimer:**
   
