@@ -44,6 +44,25 @@ buttons:
     url: https://eoc.sa.gov.au
 ---
 mandatory: True
+question: |
+  Contact Information
+subquestion: |  
+  Please provide your personal contact information. 
+  
+  *Please note: This personal information is **not** required to use the Equal Opportunity Commission's Complaint Directory. If you would prefer not to provide your personal details please click continue.*
+  
+fields:
+   - Frist Name: EOC_first_name
+     required: false
+   - Last Name: EOC_last_name
+     required: false
+   - Email Address: EOC_email_address
+     required: false
+     
+     note: |
+      **Privacy Statement**: *Personal information provided to the Equal Opportunity Commission is protected by the Information Privacy Principles (IPPS) Instruction.  Please see* http://www.archives.sa.gov.au/alias/privacy
+---
+mandatory: True
 code: |
   if ( person_aggrieved == False ):
     endpoint['notpersonaggrieved']
