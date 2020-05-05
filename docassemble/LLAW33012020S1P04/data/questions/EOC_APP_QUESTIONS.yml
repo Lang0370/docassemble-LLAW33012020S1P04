@@ -100,7 +100,9 @@ fields:
   - no label: protected_ground
     input type: radio
     choices:
-      - Sex, Sexual Orientation and Sexual Identity: True
+      - Sex: True
+      - Sexual Orientation: True
+      - Sexual Identity: True
       - Race: True
       - Disability: True
       - Age: True
